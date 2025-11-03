@@ -140,11 +140,22 @@
 
     /* HERO */
     .hero {
-      padding-top: 140px;
-      text-align: center;
-      position:absolute;
-      z-index:1;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  min-height: 100vh;       /* full viewport height */
+  text-align: center;
+  padding: 0 20px;         /* optional horizontal padding */
+  position: relative;      /* relative instead of absolute */
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
 
     .hero h1 {
       font-size: 50px;
@@ -424,6 +435,7 @@
   </script>
 </body>
 </html>
+
 
 
 
